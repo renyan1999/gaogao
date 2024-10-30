@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点菜页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>在线点菜</h1>
+        <div class="menu">
+            <h3>菜单</h3>
+            <div class="menu-item">
+                <span>宫保鸡丁</span>
+                <span>¥20</span>
+                <button onclick="addToOrder('宫保鸡丁', 20)">加入订单</button>
+            </div>
+            <div class="menu-item">
+                <span>麻婆豆腐</span>
+                <span>¥15</span>
+                <button onclick="addToOrder('麻婆豆腐', 15)">加入订单</button>
+            </div>
+            <div class="menu-item">
+                <span>红烧肉</span>
+                <span>¥30</span>
+                <button onclick="addToOrder('红烧肉', 30)">加入订单</button>
+            </div>
+        </div>
+
+        <div class="order">
+            <h3>已点菜品</h3>
+            <div id="orderList"></div>
+            <p><strong>总价：</strong>¥<span id="totalPrice">0</span></p>
+            <button class="reset-btn" onclick="resetOrder()">重置订单</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
