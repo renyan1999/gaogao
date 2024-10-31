@@ -25,7 +25,7 @@ function updateOrderDisplay() {
         const orderItem = document.createElement("div");
         orderItem.classList.add("order-item");
         orderItem.innerHTML = `
-            <span>${item.name} x${item.quantity} - ¥${item.price}</span>
+            <span>${item.name} x${item.quantity} - ${item.price}<font color="#FF0000">❤</font></span>
             <button class="delete-btn" onclick="removeFromOrder(${index})">删除</button>
         `;
         orderList.appendChild(orderItem);
